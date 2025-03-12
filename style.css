@@ -24,13 +24,13 @@ html {
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf'),
-    url('/assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf');
+  src: url('./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf'),
+    url('./assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf');
 }
 
 @font-face {
   font-family: 'Jura';
-  src: url('/assets/fonts/Jura/Jura-VariableFont_wght.ttf');
+  src: url('./assets/fonts/Jura/Jura-VariableFont_wght.ttf');
 }
 
 body {
@@ -237,7 +237,7 @@ section.hero {
   height: 100vh;
   /* max-height: 500px; */
   font-family: 'Jura', sans-serif;
-  background-image: url('/assets/image/hero.webp');
+  background-image: url('./assets/image/hero.webp');
   background-size: cover;
   background-position: bottom;
   color: var(--color-white);
@@ -849,6 +849,11 @@ section.hero {
   border-radius: 32px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.contact__form--btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .contact__form--btn:hover {
